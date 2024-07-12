@@ -1,0 +1,14 @@
+<!-- home.component.html -->
+<div class="home-container">
+    <div class="home-card">
+      <h2>Welcome, {{ username }}</h2>
+      <p>Your Roles:</p>
+      <ul>
+        <li *ngFor="let role of roles">{{ role }}</li>
+      </ul>
+      <button mat-raised-button color="accent" (click)="logout()" class="logout-button">
+        Logout
+      </button>
+    </div>
+</div>
+  
